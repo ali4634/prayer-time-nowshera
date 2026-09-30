@@ -4,38 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>نوشہرہ — اوقاتِ نماز</title>
-<meta name="theme-color" content="#0B1626">
+<meta name="theme-color" content="#F4ECDA">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="اوقاتِ نماز">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2220%27 fill=%27%230B1626%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23E3B23C%27/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%230B1626%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23E3B23C%27/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2220%27 fill=%27%23F4ECDA%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23A87B1A%27/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%23F4ECDA%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23A87B1A%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-1:#0B1626;
-    --bg-2:#101F35;
-    --card:#132A42;
-    --card-2:#0F2236;
-    --line:rgba(227,178,60,0.16);
-    --gold:#E3B23C;
-    --gold-dim:#B9902E;
-    --cream:#F2ECDC;
-    --muted:#8FA3BC;
-    --sehri:#5FA8D3;
-    --iftar:#E3814A;
+    --bg-1:#F4ECDA;
+    --bg-2:#FBF7EC;
+    --card:#FFFDF8;
+    --card-2:#F6EFE0;
+    --line:rgba(168,123,26,0.28);
+    --gold:#A87B1A;
+    --gold-dim:#8C6514;
+    --cream:#2B2115;
+    --muted:#7C6B51;
+    --sehri:#2E6E93;
+    --iftar:#C25A1E;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
     box-sizing:border-box;
-  }
-  @media (prefers-color-scheme: light){
-    :root:not([data-theme="dark"]){
-      --bg-1:#0B1626; --bg-2:#101F35; --card:#132A42; --card-2:#0F2236;
-      --cream:#F2ECDC; --muted:#8FA3BC;
-    }
   }
   *{box-sizing:border-box;}
   html{scroll-padding-top:env(safe-area-inset-top,0px);}
@@ -43,7 +37,7 @@
   body{
     margin:0;
     background:
-      radial-gradient(1200px 500px at 50% -10%, #1a3350 0%, transparent 60%),
+      radial-gradient(1200px 500px at 50% -10%, rgba(255,219,140,0.75) 0%, transparent 60%),
       linear-gradient(180deg,var(--bg-1),var(--bg-2) 60%, var(--bg-1));
     color:var(--cream);
     font-family:"Noto Naskh Arabic","Noto Nastaliq Urdu",system-ui,sans-serif;
@@ -93,14 +87,14 @@
     width:36px;height:36px;border-radius:10px;cursor:pointer;
     display:flex;align-items:center;justify-content:center;
   }
-  .datebar button:active{background:rgba(227,178,60,0.12);}
+  .datebar button:active{background:rgba(168,123,26,0.12);}
   .datebar .center{text-align:center;flex:1;}
   .datebar .g-date{font-size:15px;font-weight:600;color:var(--cream);}
   .datebar .g-sub{font-size:11.5px;color:var(--muted);margin-top:1px;}
   .today-pill{
     display:inline-block;margin-top:6px;font-size:11px;color:var(--gold);
     border:1px solid var(--line);border-radius:999px;padding:2px 10px;cursor:pointer;
-    background:rgba(227,178,60,0.06);
+    background:rgba(168,123,26,0.06);
   }
 
   .cardlist{display:flex;flex-direction:column;gap:9px;}
@@ -115,7 +109,7 @@
   .row .icon{
     width:38px;height:38px;border-radius:11px;
     display:flex;align-items:center;justify-content:center;
-    background:rgba(227,178,60,0.10);
+    background:rgba(168,123,26,0.10);
     flex-shrink:0;
   }
   .row .icon svg{width:19px;height:19px;}
@@ -129,8 +123,8 @@
   }
   .row.sehri{border-color:rgba(95,168,211,0.35);}
   .row.sehri .icon{background:rgba(95,168,211,0.14);}
-  .row.iftar{border-color:rgba(227,129,74,0.35);}
-  .row.iftar .icon{background:rgba(227,129,74,0.14);}
+  .row.iftar{border-color:rgba(194,90,30,0.35);}
+  .row.iftar .icon{background:rgba(194,90,30,0.14);}
   .row.hilite .time{color:var(--gold);}
 
   .asr-toggle{
@@ -143,7 +137,7 @@
     font-family:"Noto Naskh Arabic",serif;font-size:14px;
     padding:9px 6px;border-radius:10px;cursor:pointer;
   }
-  .asr-toggle button.active{background:var(--gold);color:#1a1305;font-weight:600;}
+  .asr-toggle button.active{background:var(--gold);color:#FFF8E7;font-weight:600;}
 
   .section-title{
     margin:26px 0 10px;font-family:"Noto Nastaliq Urdu",serif;
@@ -171,12 +165,12 @@
   .mtable-wrap{overflow-x:auto;padding-bottom:10px;}
   table.mtable{width:100%;border-collapse:collapse;font-size:12.5px;min-width:520px;}
   table.mtable th, table.mtable td{
-    padding:7px 6px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.06);
+    padding:7px 6px;text-align:center;border-bottom:1px solid rgba(43,33,21,0.08);
     font-variant-numeric:tabular-nums;
   }
   table.mtable th{color:var(--gold);font-weight:600;font-size:11.5px;font-family:"Noto Naskh Arabic",serif;}
   table.mtable td.day-cell{color:var(--muted);}
-  table.mtable tr.is-today td{background:rgba(227,178,60,0.10);}
+  table.mtable tr.is-today td{background:rgba(168,123,26,0.10);}
   table.mtable tr.is-today td.day-cell{color:var(--gold);font-weight:700;}
 
   footer{
@@ -196,7 +190,7 @@
   </div>
 
   <div class="moonrow">
-    <svg width="26" height="26" viewBox="0 0 100 100"><path d="M62 8a42 42 0 1 0 22 76 34 34 0 1 1-22-76z" fill="#E3B23C"/></svg>
+    <svg width="26" height="26" viewBox="0 0 100 100"><path d="M62 8a42 42 0 1 0 22 76 34 34 0 1 1-22-76z" fill="#A87B1A"/></svg>
   </div>
 
   <div class="datebar">
@@ -272,12 +266,12 @@ function to12(t, isPM){
 }
 
 const ROW_DEFS = [
-  {key:"fajr", idx:0, label:"سحری / فجر", note:"صبح صادق", pm:false, cls:"sehri", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#E3B23C" stroke-width="1.6"><path d="M12 3v3M4.2 6.2l2 2M19.8 6.2l-2 2M3 14h1M20 14h1M6 14a6 6 0 0 1 12 0"/><path d="M4 18h16" stroke-linecap="round"/></svg>'},
-  {key:"sunrise", idx:1, label:"طلوعِ آفتاب", note:"", pm:false, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#E3B23C" stroke-width="1.6"><circle cx="12" cy="14" r="4"/><path d="M12 3v3M4 18h16M2 22h20M5 9l2 2M19 9l-2 2"/></svg>'},
-  {key:"zuhr", idx:2, label:"ظہر (زوالِ آفتاب)", note:"", pm:true, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#E3B23C" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2 2M17.4 17.4l2 2M4.6 19.4l2-2M17.4 6.6l2-2"/></svg>'},
-  {key:"asr", idx:null, label:"عصر", note:"", pm:true, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#E3B23C" stroke-width="1.6"><circle cx="12" cy="14" r="4.5"/><path d="M12 2v2M4 14H2M22 14h-2M6 20l-1.5 1.5M19.5 21.5 18 20"/></svg>'},
-  {key:"maghrib", idx:5, label:"مغرب / افطار", note:"", pm:true, cls:"iftar", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#E3814A" stroke-width="1.6"><circle cx="12" cy="15" r="4"/><path d="M4 19h16M2 15h1M21 15h1M6 15l-1.5-1.5M19.5 13.5 18 15"/></svg>'},
-  {key:"isha", idx:6, label:"عشاء", note:"", pm:true, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#E3B23C" stroke-width="1.6"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>'},
+  {key:"fajr", idx:0, label:"سحری / فجر", note:"صبح صادق", pm:false, cls:"sehri", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#A87B1A" stroke-width="1.6"><path d="M12 3v3M4.2 6.2l2 2M19.8 6.2l-2 2M3 14h1M20 14h1M6 14a6 6 0 0 1 12 0"/><path d="M4 18h16" stroke-linecap="round"/></svg>'},
+  {key:"sunrise", idx:1, label:"طلوعِ آفتاب", note:"", pm:false, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#A87B1A" stroke-width="1.6"><circle cx="12" cy="14" r="4"/><path d="M12 3v3M4 18h16M2 22h20M5 9l2 2M19 9l-2 2"/></svg>'},
+  {key:"zuhr", idx:2, label:"ظہر (زوالِ آفتاب)", note:"", pm:true, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#A87B1A" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2 2M17.4 17.4l2 2M4.6 19.4l2-2M17.4 6.6l2-2"/></svg>'},
+  {key:"asr", idx:null, label:"عصر", note:"", pm:true, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#A87B1A" stroke-width="1.6"><circle cx="12" cy="14" r="4.5"/><path d="M12 2v2M4 14H2M22 14h-2M6 20l-1.5 1.5M19.5 21.5 18 20"/></svg>'},
+  {key:"maghrib", idx:5, label:"مغرب / افطار", note:"", pm:true, cls:"iftar", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#C25A1E" stroke-width="1.6"><circle cx="12" cy="15" r="4"/><path d="M4 19h16M2 15h1M21 15h1M6 15l-1.5-1.5M19.5 13.5 18 15"/></svg>'},
+  {key:"isha", idx:6, label:"عشاء", note:"", pm:true, cls:"", icon:'<svg viewBox="0 0 24 24" fill="none" stroke="#A87B1A" stroke-width="1.6"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>'},
 ];
 
 function render(){

@@ -3,18 +3,18 @@
   "short_name": "اوقاتِ نماز",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0B1626",
-  "theme_color": "#0B1626",
+  "background_color": "#F4ECDA",
+  "theme_color": "#F4ECDA",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2220%27 fill=%27%230B1626%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23E3B23C%27/%3E%3C/svg%3E",
+      "src": "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2220%27 fill=%27%23F4ECDA%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23A87B1A%27/%3E%3C/svg%3E",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2220%27 fill=%27%230B1626%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23E3B23C%27/%3E%3C/svg%3E",
+      "src": "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2220%27 fill=%27%23F4ECDA%27/%3E%3Cpath d=%27M62 20a32 32 0 1 0 18 58 26 26 0 1 1-18-58z%27 fill=%27%23A87B1A%27/%3E%3C/svg%3E",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
