@@ -364,7 +364,7 @@ document.getElementById("monthSelect").addEventListener("change", (e)=>{
   viewMonth = t.m; viewDay = Math.min(t.d, daysInMonth(t.m));
   render();
 })();
-</script>
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js")
     .then((registration) => {
